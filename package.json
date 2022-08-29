@@ -1,5 +1,5 @@
 {
-  "name": "node-express-jwt-auth",
+  "name": "todo-jwt-auth",
   "version": "1.0.0",
   "description": "My another try at JWT authentication.",
   "main": "app.js",
