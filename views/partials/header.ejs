@@ -3,24 +3,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <nav>
       <a href="/"><img src="/logo.png" alt="todo list" /></a>
-      <ul>
-        <% if(user) { %>
-        <li>
-          Welcome,
-          <a href="/user" class="userLink"><%= user.name.firstName %></a>!
-        </li>
-        <li><a href="/logout">Log out</a></li>
+      <div class="links">
+        <% if(user) { %> Welcome,&nbsp;
+        <a href="/user" class="userLink"><%= user.name.firstName %></a>!
+        <a href="/logout"><button class="logout">Log out</button></a>
         <% } else { %>
-        <li><a href="/login" class="btn login link">Log in</a></li>
-        <li><a href="/signup" class="btn link">Sign up</a></li>
+        <a href="/login"><button class="login link">Log in</button></a>
+        <a href="/signup"><button class="link">Sign up</button></a>
         <% } %>
-      </ul>
+      </div>
     </nav>
   </body>
 </html>

@@ -4,6 +4,17 @@
 </div>
 <% } %>
 
+<div class="form">
+  <h2>Add a to-do</h2>
+  <form id="todoAdd">
+    <label for="title">Title</label>
+    <input type="text" name="title" />
+    <label for="body">Body</label>
+    <input type="text" name="body" />
+    <button>Add</button>
+  </form>
+</div>
+
 <div class="todos">
   <% if(user) { if (user.todos.length !=0) { %>
   <h2>Your Todos:</h2>
@@ -12,25 +23,16 @@
     <img src="/todo.png" alt="todo list" />
     <h4><%= todo.title %></h4>
     <p><%= todo.body %></p>
-    <button class="delete btn" data-id="<%= todo._id %>">Remove</button>
+    <button class="delete" data-id="<%= todo._id %>">Remove</button>
   </div>
   <% }) %> <% } else { %>
   <h2>No todos for you now!</h2>
   <% } %> <% }%>
 </div>
 
-<form>
-  <h2>Add a to-do</h2>
-  <label for="title">Title</label>
-  <input type="text" name="title" />
-  <label for="body">Body</label>
-  <input type="text" name="body" />
-  <button>Add</button>
-</form>
-
 <%- include('partials/footer'); -%>
 <script>
-  const form = document.querySelector("form");
+  const form = document.querySelector("form#todoAdd");
   const todos = document.querySelectorAll(".todo");
   for (let i = 0; i < todos.length; i++) {
     todos[i].title = "Just do it lol!";

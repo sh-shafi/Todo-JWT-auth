@@ -1,6 +1,6 @@
 <%- include('partials/header'); -%>
 
-<section id="main">
+<section id="user">
   <div class="image user">
     <img src="/user.png" alt="" />
   </div>
@@ -14,8 +14,8 @@
       </h4>
       <h4><span class="tag">Email:</span> <%= user.email %></h4>
     </div>
-    <a href="/todos" class="btn">View Your Todos</a>
-    <button class="deleteBtn" id="delete_btn">Delete Account</button>
+    <a href="/todos"><button class="mrgn">View Your Todos</button></a>
+    <button class="delete" id="delete_btn">Delete Account</button>
   </div>
 </section>
 
@@ -23,8 +23,8 @@
   <div class="box">
     <h2>Are you sure you want to delete your account?</h2>
     <div class="buttons">
-      <button class="deleteBtn" id="confirm_btn">Confirm</button>
-      <button class="btn cancel login" id="cancel_btn">Cancel</button>
+      <button class="delete" id="confirm_btn">Confirm</button>
+      <button class="login" id="cancel_btn">Cancel</button>
     </div>
   </div>
 </section>

@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "sass": "sass -w public/styles/styles.scss public/styles/styles.css"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "mongoose": "^6.4.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "sass": "^1.54.5"
   }
 }
