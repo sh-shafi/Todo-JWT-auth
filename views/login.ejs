@@ -26,9 +26,6 @@
   const emailError = document.querySelector(".email.error");
   const passwordError = document.querySelector(".password.error");
 
-  form.email.value = "yoshi@test.com";
-  form.password.value = "test123";
-
   form.onsubmit = async (e) => {
     e.preventDefault();
     emailError.textContent = "";
