@@ -83,8 +83,10 @@ form.onsubmit = async (e) => {
       todoDiv.appendChild(btn);
 
       if (count != 0) todoHeader.innerText = "Your Todos:";
-
       todosDiv.appendChild(todoDiv);
+
+      form.title.value = "";
+      form.body.value = "";
     }
   } catch (err) {
     console.log(err);
