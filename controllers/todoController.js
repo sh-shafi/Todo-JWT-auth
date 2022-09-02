@@ -4,7 +4,8 @@ const post_todo = async (req, res) => {
     const user = res.user;
     user.todos.push(todo);
     await user.save();
-    res.status(201).json({ message: "ok" });
+    const id = user.todos[user.todos.length - 1].id;
+    res.status(201).json({ message: "ok", id });
   } catch (err) {
     console.log(err);
     res.status(400).json({ message: "notok" });

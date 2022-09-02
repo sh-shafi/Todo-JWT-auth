@@ -16,9 +16,21 @@ Create a .env file in the folder and provide your own environment variables.
 
 ```env
 PORT="your port number"
-DBURI="Your mongodb link"
+DBURI="Your mongodb link" or if you have mongodb installed locally "mongodb://localhost/users_jwt"
 KEY="A secret key for JWT"
 ```
+
+Use following commands for starting the project.
+
+> ```
+> npm run dev
+> ```
+
+or
+
+> ```
+> npm run start
+> ```
 
 ## Contributing
 
