@@ -1,6 +1,6 @@
 # Todo-JWT-auth
 
-Just a simple todo application with JWT for authentication. The project is already deployed at [Heroku](https://cream-todo-jwt.herokuapp.com/). Feel free to check it out.
+Just a simple to-do application with JWT for authentication. Feel free to check it out.
 
 ## Installation
 
